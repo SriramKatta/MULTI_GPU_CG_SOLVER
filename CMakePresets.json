@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "alexdefault",
+            "displayName": "Default Config",
+            "description": "Default build using Ninja",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build-ninja",
+            "cacheVariables": {
+                "CPM_SOURCE_CACHE": "$env{HOME}/.cache/CPM",
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ]
+}
